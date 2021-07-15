@@ -80,7 +80,7 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     , ((modm,               xK_c     ), spawn "google-chrome-stable")
 
     -- launch chromium
-    , ((controlMask .|. shiftMask,  xK_c     ), spawn "chromium")
+    , ((modm .|. controlMask, xK_Return), spawn "chromium")
 
     -- close focused window
     , ((modm .|. shiftMask, xK_c     ), kill)
