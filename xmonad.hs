@@ -40,7 +40,7 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     , ((0, xF86XK_AudioLowerVolume), spawn "pactl set-sink-volume @DEFAULT_SINK@ -10%")
     , ((0, xF86XK_AudioRaiseVolume), spawn "pactl set-sink-volume @DEFAULT_SINK@ +10%")
     , ((modm, xK_p), spawn "dmenu_run")
-    , ((modm, xK_d), spawn "pcmanfm")
+    , ((modm, xK_d), spawn "thunar")
     , ((modm, xK_c), spawn "google-chrome-stable")
     , ((modm .|. controlMask, xK_Return), spawn "chromium")
     , ((modm .|. shiftMask, xK_c), kill)
